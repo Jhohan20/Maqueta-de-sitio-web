@@ -1,0 +1,29 @@
+/*Aca comienzan mis estilos*/
+.menu{
+    background-color: aqua;
+    height: 6em;
+}
+.logo{
+    background-color: cadetblue;
+    height: 30em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.informacion{
+    background-color: blue;
+    height: 30em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.redes{
+    background-color: purple;
+    height: 10em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
