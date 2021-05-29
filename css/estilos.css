@@ -1,19 +1,70 @@
-/*Aca comienzan mis estilos*/
-.menu{
-    background-color: aqua;
-    height: 6em;
+body{
+    background-color: blanchedalmond;
 }
+/*Aca comienzan mis estilos*/
+.icono-menu{
+    margin: 20px 30px;
+    position: relative;
+    z-index: 10;
+}
+.icono-menu img{
+    vertical-align: top;
+    width: 60px;
+    cursor: pointer;
+}
+
+/*Estilos para el contenedor del menú */
+.cont-menu{
+    background-color: rgb(72, 52, 101);
+    box-shadow: 2px 0px 5px 2px rgb(251, 186, 96);
+    width: 400px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .5s ease;
+}
+
+/*Estilos para agregar a JS*/
+.active{
+    transform: translate(-600px);
+}
+
+.opacity{
+    background-color: black;
+    transition:  all .5s ease;
+}
+
+/*Estilos para el listado del menú*/
+.cont-menu ul{
+    padding: 100px 0px 20px 0px;
+    list-style: none;
+}
+
+.cont-menu ul li{
+    color: white;
+    display: block;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px 50px;
+    cursor: pointer;
+}
+
+.cont-menu ul li:hover{
+    background-color: rgb(251, 186, 96);
+    color: rgb(0, 0, 0);
+}
+
+
 .logo{
-    background-color: cadetblue;
-    height: 30em;
+    height: 25em;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .informacion{
-    background-color: blue;
-    height: 30em;
+    height: 25em;
     text-align: center;
     display: flex;
     align-items: center;
