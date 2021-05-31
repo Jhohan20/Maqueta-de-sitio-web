@@ -1,5 +1,7 @@
 body{
     background-color: blanchedalmond;
+    background:url(fondo7.jpg);
+    background-size: 100%;
 }
 /*Aca comienzan mis estilos*/
 .icono-menu{
@@ -69,12 +71,92 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    back
 }
-.redes{
-    background-color: purple;
-    height: 10em;
+/*Iconos de la pantalla de inicio*/
+.btn-wsp{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: #0dfe53;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgb(0,0,0,0.3);
+    z-index: 100;
+}
+.btn-wsp:hover{
+    text-decoration: none;
+    color: #0dfe53;
+    background: #fff;
+
+}
+
+/*AQUÍ COMIENZA LA PARTE DE NOSTROS */
+.nosotros{
+    background-color: white;
+    height: 5em;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: rgb(72, 52, 101);
+    margin: 20px 20px 20px 20px;
+    border-radius: 10px;
+}
+.info-nosotros{
+    background-color: white;
+    height: 9em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    margin: 5px 10px 20px 5px;
+    border-radius: 10px;
+}
+.video{
+    margin: 20px 20px 20px 350px;
+}
+/*Misión, Visión, Objetivos*/
+.contenedor{
+    margin: auto;
+    width: 100%;
+}
+.caja__columna{
+    color: #fff;
+    background: #0f222b;
+    position: relative;
+    text-align: center;
+    width: 98%;
+    height: 440px;
+    margin: 10px;
+}
+.caja__columna .texto{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border: 2px solid #69ca62;
+    padding: 30px;
+}
+
+.caja__columna .texto h2{
+
+    font-size: 40px;
+    margin: 0 0 10px;
+}
+.caja__columna .texto p{
+    font-size: 18px;
+}
+svg,rect{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
