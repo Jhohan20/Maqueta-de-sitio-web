@@ -11,8 +11,9 @@ iconoMenu.addEventListener('click', (e) => {
     const rutaActual = e.target.getAttribute('src');
     
     if(rutaActual == 'images/menu.png'){
-        e.target.setAttribute('src', 'menu2.png');
+        e.target.setAttribute('src', 'images/menu2.png');
     }else{
         e.target.setAttribute('src', 'images/menu.png');
     }
 });
+

@@ -15,6 +15,39 @@
     font-family: CaviarDreams_Italic;
     src: url(/font/CaviarDreams_Italic.ttf);
 }
+/*AQUÍ COMIENZAN LOS ESTILOS DE CARGA*/
+#contenedor_carga{
+    background-color: rgba(250, 245, 245, 0.5);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    z-index: 10000;
+}
+#carga{
+    border: 15px solid #ccc;
+    border-top-color: red;
+    border-top-style: groove;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    animation: girar 1.5s linear infinite;
+    -webkit-animation: girar 1.5s linear infinite;
+    -o-animation: girar 1.5s linear infinite;
+}
+@keyframes girar{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
 /*Aca comienzan mis estilos*/
 .icono-menu{
     margin: 20px 30px;
@@ -101,7 +134,7 @@
     text-align: center;
     font-size: 30px;
     box-shadow: 0px 1px 10px rgb(0,0,0,0.3);
-    z-index: 100;
+    z-index: 1;
 }
 .btn-wsp:hover{
     text-decoration: none;
