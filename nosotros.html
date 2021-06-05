@@ -10,8 +10,17 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Proyecto 52</title>
-  </head>
+    <!--Estilos propios de este html-->
+    <style>
+        body{
+            background-color: blanchedalmond;
+            background-image: url(../Sitio\ Web/images/fondo0.jpg);
+            background-size: 100%;
+        }
+          </style>
+</head>
   <body>
     <div class="container-fluid">
         <div class="row">
@@ -20,20 +29,19 @@
             </div>
             <div class="cont-menu active" id="menu">
                 <ul>
-                  <li>Inicio</li>
-                  <li>Nosotros</li>
-                  <li>Novedades</li>
-                  <li>Productos</li>
-                  <li>Obsequios</li>
-                  <li>Contacto</li>
+                    <nav>
+                        <a href="index.html"><li>Inicio</li></a>
+                        <a href="nosotros.html"><li>Nosotros</li></a>
+                        <a href="novedades.html"><li>Novedades</li></a>
+                        <a href="productos.html"><li>Productos</li></a>
+                        <a href="obsequios.html"><li>Obsequios</li></a>
+                        <a href="contacto.html"><li>Contacto</li></a>
+                    </nav>
                 </ul>
             </div>
-            <div class="col-md-3"></div>
-            <div class="col-md-3 nosotros">
-                <h1>Nosotros</h1>
-            </div>
-            <div class="col-md-5"></div>
         </div>
+        </div>
+        <div class="col-md-12 novedades"><h1>Nosotros</h1></div>
         <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-10 info-nosotros">
@@ -44,11 +52,10 @@
                     partir de conocimientos encaminados a la ilustración, la fotografía, el diseño, 
                     la programación y la animación.</p>
             </div>
-            <div class="col-md-1"></div>
         </div>
         <div class="row">
-            <div class="video col-xl-12 col-md-12">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/PpCQEyiVSrA" 
+            <div class="video">
+                <iframe class="esdacode_video" src="https://www.youtube.com/embed/PpCQEyiVSrA" 
                 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
                 encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
@@ -60,37 +67,132 @@
                     <div class="caja__columna">
                         <svg><rect></rect></svg>
                         <div class="texto">
-                            <h2>svg</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                                Sunt provident voluptatem aut dolores, dolore obcaecati 
-                                iure inventore laboriosam beatae, unde qui in nulla. 
-                                Dolorem autem sapiente voluptatibus nesciunt alias asperiores!</p>
+                            <h2>Objetivos</h2>
+                            <p> Ampliar el conocimiento de la cultura skate como un 
+                                deporte que puede ser parte de un proyecto de vida por 
+                                medio de una narrativa transmedia.  </p>
                         </div>
                     </div>
                     <div class="caja__columna">
                         <svg><rect></rect></svg>
                         <div class="texto">
-                            <h2>svg</h2>
+                            <h2>Misión</h2>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                                 Sunt provident voluptatem aut dolores, dolore obcaecati 
-                                iure inventore laboriosam beatae, unde qui in nulla. 
-                                Dolorem autem sapiente voluptatibus nesciunt alias asperiores!</p>
+                                iure inventore laboriosam beatae, unde qui in nulla. </p>
                         </div>
                     </div>
                     <div class="caja__columna">
                         <svg> <rect></rect></svg>
                         <div class="texto">
-                            <h2>svg</h2>
+                            <h2>Visión</h2>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                                 Sunt provident voluptatem aut dolores, dolore obcaecati 
-                                iure inventore laboriosam beatae, unde qui in nulla. 
-                                Dolorem autem sapiente voluptatibus nesciunt alias asperiores!</p>
+                                iure inventore laboriosam beatae, unde qui in nulla. </p>
                         </div>
                     </div>
                 </div>
             </section>
         </div>
+        <div class="col-md-12 equipo"><h1>Equipo de trabajo</h1></div>
+        <div class="row">
+        </div>
+            <div class="container">
+                <main class="grid">
+                    <article>
+                        <img src="images/persona2.jpg" alt="">
+                        <div class="text">
+                            <h3>Jhohan Sachica</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti vero vel 
+                                laborum, aliquid nobis inventore sunt temporibus et quo ipsam 
+                                laudantium alias maiores at consequuntur autem! Doloremque 
+                                quaerat reiciendis nobis.</p>
+                            <button>Button 1</button>
+                        </div>
+                    </article>
+
+                    <article>
+                        <img src="images/persona2.jpg" alt="">
+                        <div class="text">
+                            <h3>Tatiana Poveda</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti vero vel 
+                                laborum, aliquid nobis inventore sunt temporibus et quo ipsam 
+                                laudantium alias maiores at consequuntur autem! Doloremque 
+                                quaerat reiciendis nobis.</p>
+                            <button>Button 2</button>
+                        </div>
+                    </article>
+
+                    <article>
+                        <img src="images/persona2.jpg" alt="">
+                        <div class="text">
+                            <h3>Eduard Ramírez</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti vero vel 
+                                laborum, aliquid nobis inventore sunt temporibus et quo ipsam 
+                                laudantium alias maiores at consequuntur autem! Doloremque 
+                                quaerat reiciendis nobis.</p>
+                            <button>Button 3</button>
+                        </div>
+                    </article>
+                </main>
+            </div>
+
+            <div class="container">
+                <main class="grid">
+                    <article>
+                        <img src="images/persona2.jpg" alt="">
+                        <div class="text">
+                            <h3>Andrés García</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti vero vel 
+                                laborum, aliquid nobis inventore sunt temporibus et quo ipsam 
+                                laudantium alias maiores at consequuntur autem! Doloremque 
+                                quaerat reiciendis nobis.</p>
+                            <button>Button 1</button>
+                        </div>
+                    </article>
+
+                    <article>
+                        <img src="images/persona2.jpg" alt="">
+                        <div class="text">
+                            <h3>Kewin Zamora</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti vero vel 
+                                laborum, aliquid nobis inventore sunt temporibus et quo ipsam 
+                                laudantium alias maiores at consequuntur autem! Doloremque 
+                                quaerat reiciendis nobis.</p>
+                            <button>Button 2</button>
+                        </div>
+                    </article>
+
+                    <article>
+                        <img src="images/persona2.jpg" alt="">
+                        <div class="text">
+                            <h3>Reiner Guerra</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti vero vel 
+                                laborum, aliquid nobis inventore sunt temporibus et quo ipsam 
+                                laudantium alias maiores at consequuntur autem! Doloremque 
+                                quaerat reiciendis nobis.</p>
+                            <button>Button 3</button>
+                        </div>
+                    </article>
+                </main>
+            </div>
     </div>
+        <footer>
+            <div class="footer-content">
+                <h3>SÍGUENOS</h3>
+                <p>Puedes seguirnos y contactarnos en nuestras redes sociales</p>
+                    <ul class="socials">
+                        <li><a href="https://www.facebook.com/Proyecto52-107615051538802/?ref=pages_you_manage"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=573223398538"><i class="fa fa-whatsapp"></i></a></li>
+                        <li><a href="https://www.instagram.com/proyecto52.skate/"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCtSvOWu4BJDjnK7f7BKQTZw"><i class="fa fa-youtube"></i></a></li>
+                    </ul>
+                 </div>
+                 <div class="footer-bottom">
+                     <p>copyright &copy;2021 Proyecto52. designed by <span>Proyecto52</span></p>
+                 </div>
+        </footer>
 
     <!-- Optional JavaScript; choose one of the two! -->
 

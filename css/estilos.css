@@ -1,7 +1,19 @@
-body{
-    background-color: blanchedalmond;
-    background:url(fondo7.jpg);
-    background-size: 100%;
+*,*::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: CaviarDreams;
+    src: url(/font/CaviarDreams.ttf);
+}
+@font-face {
+    font-family: CaviarDreams_Bold;
+    src: url(/font/CaviarDreams_Bold.ttf);
+}
+@font-face {
+    font-family: CaviarDreams_Italic;
+    src: url(/font/CaviarDreams_Italic.ttf);
 }
 /*Aca comienzan mis estilos*/
 .icono-menu{
@@ -66,6 +78,8 @@ body{
     justify-content: center;
 }
 .informacion{
+    font-family: CaviarDreams_Italic;
+    text-shadow: 3px 1px 1px black;
     height: 25em;
     text-align: center;
     display: flex;
@@ -96,8 +110,9 @@ body{
 
 }
 
-/*AQUÍ COMIENZA LA PARTE DE NOSTROS */
+/*AQUÍ COMIENZA LA PARTE DE NOSOTROS */
 .nosotros{
+    font-family: CaviarDreams;
     background-color: white;
     height: 5em;
     text-align: center;
@@ -105,10 +120,11 @@ body{
     align-items: center;
     justify-content: center;
     color: rgb(72, 52, 101);
-    margin: 20px 20px 20px 20px;
+    margin: 20px 0px 20px 0px;
     border-radius: 10px;
 }
 .info-nosotros{
+    font-family: CaviarDreams;
     background-color: white;
     height: 9em;
     text-align: center;
@@ -120,8 +136,27 @@ body{
     border-radius: 10px;
 }
 .video{
-    margin: 20px 20px 20px 350px;
+    width: 50%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 0;
 }
+.video::after{
+    content: "";
+    display: block;
+    width: 100%;
+    padding-bottom: 56.25%;
+}
+.esdacode_video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
 /*Misión, Visión, Objetivos*/
 .contenedor{
     margin: auto;
@@ -129,21 +164,24 @@ body{
 }
 .caja__columna{
     color: #fff;
-    background: #0f222b;
+    background: rgb(72, 52, 101);
     position: relative;
     text-align: center;
     width: 98%;
     height: 440px;
     margin: 10px;
+    border-radius: 10px;
 }
 .caja__columna .texto{
+    font-family: CaviarDreams;
     position: absolute;
     top: 15px;
     left: 15px;
     right: 15px;
     bottom: 15px;
-    border: 2px solid #69ca62;
+    border: 2px solid rgb(251, 186, 96);
     padding: 30px;
+    border-radius: 10px;
 }
 
 .caja__columna .texto h2{
@@ -159,4 +197,407 @@ svg,rect{
     left: 0;
     width: 100%;
     height: 100%;
+    fill: transparent;
+    border-radius: 10px;
+}
+rect{
+    stroke: rgb(251, 186, 96);
+    stroke-width: 4;
+    stroke-dasharray: 400;
+    animation: animate 4s linear infinite;
+}
+.caja .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+@keyframes animate
+{
+    0%{
+        stroke-dashoffset: 800;
+    }
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
+@media(min-width:36px){
+    .caja__columna{
+        width: 80%;
+        height: 400px;
+    }
+}
+@media(min-width:400px){
+    .caja__columna{
+        width: 82%;
+        height: 400px;
+    }
+}
+
+@media(min-width:520px){
+    .caja__columna{
+        width: 85%;
+        height: 320px;
+    }
+}
+
+@media(min-width:600px){
+    .caja__columna{
+        width: 82%;
+        height: 270px;
+    }
+}
+@media(min-width:680px){
+    .caja__columna{
+        width: 46%;
+        height: 460px;
+    }
+}
+@media(min-width:780px){
+    .caja__columna{
+        width: 47%;
+        height: 350px;
+    }
+}
+@media(min-width:1024px){
+    .contenedor{
+        width: 1024px;
+    }
+    .caja__columna{
+        width: 31%;
+        height: 480px;
+    }
+}
+@media(min-width:1200px){
+    .contenedor{
+        width: 1200px;
+    }
+    .caja__columna{
+        height: 430px;
+    }
+}
+.equipo{
+    text-align: center;
+	width: 400px;
+	margin: 30px auto 1px;
+}
+.equipo h1 {
+	font-size: 30px;
+	color: rgb(72, 52, 101);
+	background-color: rgba(255,255,255,0.70);
+	border-radius: 10px;
+	padding: 10px 60px;
+	margin: auto;
+}
+
+
+/*Aquí van los card de nosotros*/
+.grid{
+    margin: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    align-items: center;
+}
+.grid > article{
+    background-color: orange;
+    border: none;
+    box-shadow: 2px 2px 6px 0px rgb(72, 52, 101);
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+    transition: transform .3s;
+}
+.grid > article:hover{
+    transform: translateY(5px);
+    box-shadow: 2px 2px 26px 0px rgb(72, 52, 101);
+}
+.grid > article img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.text{
+    font-family: CaviarDreams;
+    padding: 0 20px 20px;
+}
+.text h3{
+    margin-top: 10px;
+    border: 6px 6px 6px 6px;
+}
+.text button{
+    background: rgb(72, 52, 101);
+    border-radius: 10px;
+    border: none;
+    color: seashell;
+    padding: 10px;
+    width: 100%;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+@media (max-width: 768px){
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 500px){
+    .grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .grid > article{
+        text-align: center;
+    }
+}
+
+/*Estilos del FOOTER*/
+footer{
+    background-color: rgb(72, 52, 101);
+    height: auto;
+    width: 100vw;
+    font-family: CaviarDreams;
+    padding-top: 40px;
+    color: white;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+    margin: auto;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: white;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+.socials a:hover i{
+    color: rgb(251, 186, 96);
+}
+.footer-bottom{
+    background: black;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    margin-right: 1rem;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+/*AQUÍ COMIENZA LA PARTE DE NOVEDADES*/
+
+.novedades{
+    
+    text-align: center;
+	width:260px;
+	margin: 0px auto 20px;
+}
+.novedades h1 {
+	font-size: 30px;
+	color: rgb(72, 52, 101);
+	background-color: rgba(255,255,255,0.70);
+	border-radius: 10px;
+	padding: 10px 60px;
+	margin: auto;
+}
+
+.contain{
+  margin: auto;
+  background-color:rgba(255,255,255,0.70);
+	border-radius: 10px;
+  padding: 30px 30px 0px;
+	z-index: 0;
+}
+
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+ul.slider{
+	position: relative;
+	width: auto;
+	height: 400px;
+	margin: auto;
+	z-index: 1;
+}
+
+ul.slider li{
+	position: absolute;
+	height: inherit;
+	width: inherit;
+	opacity: 0;
+	transition: opacity .5s;
+	z-index: 1;
+}
+	
+ul.slider li img{
+	width: 100%;
+	height: 400px;
+	object-fit: cover;	
+} 
+
+ul.slider li:first-child{
+	opacity: 1;
+}
+
+ul.slider li:target{
+	opacity: 1;
+}
+
+.circul {
+	display: inline-block;
+	position: relative;
+}
+.circul img {
+	transition:all 0.1s;
+}
+.circul img:hover {
+	filter:drop-shadow(1); 
+	transform:scale(1.59,1.59);
+}
+.men {
+	width: 90px;
+	margin: 5px auto;
+}
+
+.barrita {
+	margin: auto;
+	width: 1200px;
+	padding-top: 5px;
+}
+
+.barrita img{	
+	width: inherit;
+	height: 2px;
+	object-fit: cover;
+	
+}
+.imag{
+	margin: auto;
+}
+
+.imag img{
+	margin: 10px 0px;
+}
+
+.espace{
+	margin: 10px 0 20px;
+}
+
+.centrar {
+	background-color: rgba(255,255,255,0.70);
+	border-radius: 10px;
+	margin: 0 auto;
+}
+
+.centrar2{
+	background-color:rgba(255,255,255,0.70);
+	border-radius: 10px;
+	margin: auto;
+}
+
+/*AQUÍ COMIENZA LA PARTE DE PRODUCTOS*/
+
+.productos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 8em;
+    margin: 20px 0px 20px 0px;
+}
+.titulo{
+    background-color: white;
+    height: 3em;
+    width: 10em;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.subtitulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
+}
+.fotografias{
+    background-color: white;
+    height: 3em;
+    width: 10em;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+}
+
+/*AQUÍ COMIENZA LA PARTE DE CONTACTO*/
+
+.elcontenedor1{
+width: 100%;
+height: 400px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+form{
+    background: white;
+    width: 30%;
+    padding: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 0 rgb(251, 186, 96);
+}
+.form{
+    width: 100%;
+    margin: auto;
+}
+form .grupo{
+    position: relative;
+    margin: 45px;
+}
+
+input, textarea{
+    background: none;
+    color:rgb(251, 186, 96);
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
 }
