@@ -10,8 +10,19 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/fontello.css">
+    <link rel="icon" href="images/favicon.ico">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/f623f3d23e.js" crossorigin="anonymous"></script>
     <title>Proyecto 52</title>
     <!--Estilos propios de este html-->
+    <style>
+      body{
+        background-color: blanchedalmond;
+        background-image: url(../Sitio\ Web/images/fondo7.jpg);
+        background-size: 100%;
+        color: azure;
+      }
+    </style>
 </head>
   <body>
     <div class="container-fluid">
@@ -22,39 +33,76 @@
             <div class="cont-menu active" id="menu">
                 <ul>
                   <nav>
-                    <a href="index.html"><li>Inicio</li></a>
-                    <a href="nosotros.html"><li>Nosotros</li></a>
-                    <a href="novedades.html"><li>Novedades</li></a>
-                    <a href="productos.html"><li>Productos</li></a>
-                    <a href="obsequios.html"><li>Obsequios</li></a>
-                    <a href="contacto.html"><li>Contacto</li></a>
+                    <a href="index.html"><li><i class="fas fa-home"></i>Inicio</li></a>
+                    <a href="nosotros.html"><li><i class="fas fa-user-friends"></i>Nosotros</li></a>
+                    <a href="novedades.html"><li><i class="far fa-newspaper"></i>Novedades</li></a>
+                    <a href="productos.html"><li><i class="fas fa-photo-video"></i>Productos</li></a>
+                    <a href="obsequios.html"><li><i class="fas fa-gift"></i>Obsequios</li></a>
+                    <a href="contacto.html"><li><i class="fas fa-id-card-alt"></i>Contacto</li></a>
                 </nav>
                 </ul>
             </div>
         </div>
     </div>
-    <div class="elcontenedor1">
-    <form action="">
-        <div class="form">
-          <h1>Formulario de contacto</h1>
-          <div class="grupo">
-            <input type="text" name="" id=""><span class="barra"></span>
-            <label>Nombre</label>
-          </div>
-          <div class="grupo">
-            <input type="email" name="" id=""><span class="barra"></span>
-            <label>Email</label>
-          </div>
-          <div class="grupo">
-            <input type="number" name="" id=""><span class="barra"></span>
-            <label>Edad</label>
-          </div>
-          <button type="submit">Contactar</button>
+    <div class="col-md-12 info-contact"><h1>¡Contáctenos!</h1></div>
+          <div class="content">
+            <div class="contact-wrapper">
+              <div class="contact-form">
+                <h3>Formulario de contacto</h3>
+                <form action="">
+                  <p>
+                    <label for="fullname">Nombre</label>
+                    <input type="text" name="fullname" id="fullname">
+                  </p>
+                  <p>
+                    <label>Correo electrónico</label>
+                    <input type="email" name="email">
+                  </p>
+                  <p>
+                    <label>Celular</label>
+                    <input type="tel" name="phone">
+                  </p>
+                  <p>
+                    <label>Asunto</label>
+                    <input type="text" name="asunto">
+                  </p>
+                  <p class="bloquear">
+                    <label>Mensaje</label>
+                    <textarea name="mensaje" rows="3"></textarea>
+                  </p>
+                  <p class="bloquear">
+                    <button type="submit">
+                      Enviar
+                    </button>
+                  </p>
+                </form>
 
+              </div>
+              <div class="contact-info">
+                <h4>Más información</h4>
+                <ul>
+                  <li><i class="fas fa-map-marker-alt"></i> Suba/Bogotá</li>
+                  <li><i class="fas fa-phone-volume"></i> 322 339 8538</li>
+                  <li><i class="fas fa-envelope"></i> proyecto52sena@gmail.com</li>
+                </ul>
+                <p>Puedes contactarnos para recibir más información y despejar las dudas que tengas. 
+                  Es prioridad para Proyecto 52 brindar una buena atención a nuestros usuarios.
+                </p>
+                <p>Proyecto 52</p>
 
-        </div>
-      </form>
-    </div>  
+              </div>
+            </div>
+            <div class="col-md-12 info-redes"><h1>Redes sociales</h1></div>
+
+            <div class="social-container">
+              <ul class="social-icons">
+              <li><a href="https://www.instagram.com/proyecto52.skate/"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.facebook.com/Proyecto52-107615051538802/?ref=pages_you_manage"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://www.youtube.com/channel/UCtSvOWu4BJDjnK7f7BKQTZw"><i class="fa fa-youtube"></i></a></li>
+              <li><a href="https://www.tiktok.com/es"><i class="fab fa-tiktok"></i></a></li>
+              </ul>
+             </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
