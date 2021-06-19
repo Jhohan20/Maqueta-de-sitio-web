@@ -152,20 +152,31 @@
 	margin: 0px auto 20px;
 }
 .info-nosotros h1 {
-	font-size: 30px;
-	color: rgb(72, 52, 101);
-	background-color: rgba(255,255,255,0.70);
-	border-radius: 10px;
-	padding: 10px 60px;
+    text-align: center;
+    color: white;
+    background-color: rgb(72, 52, 101);
+    border:3px solid #FBBA60;
+    border-radius: 10px;
+    font-size: 30px;
+	padding: 10px 50px;
 	margin: auto;
+    margin-top: 60px;
 }
 .info-no{
-    width: 100%;
-    text-align: center;
-    background-color: rgba(255,255,255,0.70);
+    width: 50%;
+    margin-left: 310px;
+    text-align: justify;
+    background-color: rgb(72, 52, 101);
+    border: 3px solid #FBBA60;
     border-radius: 10px;
-    color: rgb(72, 52, 101);
+    color: white;
     padding: 10px 15px;
+}
+@media(max-width:400px){
+    .info-no{
+        margin-left: 40px;
+        width: 80%;
+    }
 }
 .video{
     width: 50%;
@@ -316,14 +327,19 @@ rect{
 }
 .equipo h1 {
 	font-size: 30px;
-	color: rgb(72, 52, 101);
-	background-color: rgba(255,255,255,0.70);
 	border-radius: 10px;
 	padding: 10px 60px;
 	margin: auto;
+    text-align: center;
+    color: white;
+    background-color: rgb(72, 52, 101);
+    border:3px solid #FBBA60;
 }
-
-
+@media(max-width:400px){
+    .equipo{
+        width: 100%;
+    }
+}
 /*Aquí van los card de nosotros*/
 .grid{
     margin: 80px;
@@ -467,19 +483,22 @@ footer{
 }
 /*AQUÍ COMIENZA LA PARTE DE NOVEDADES*/
 
-.novedades{
+.info-novedades{
     
     text-align: center;
 	width:260px;
 	margin: 0px auto 20px;
 }
-.novedades h1 {
-	font-size: 30px;
-	color: rgb(72, 52, 101);
-	background-color: rgba(255,255,255,0.70);
-	border-radius: 10px;
-	padding: 10px 60px;
+.info-novedades h1 {
+    text-align: center;
+    color: white;
+    background-color: rgb(72, 52, 101);
+    border:3px solid #FBBA60;
+    border-radius: 10px;
+    font-size: 30px;
+	padding: 10px 45px;
 	margin: auto;
+    margin-top: 60px;
 }
 .novedades p {
     background-color: rgba(255,255,255,0.70);
@@ -586,7 +605,23 @@ ul.slider li:target{
 }
 
 /*AQUÍ COMIENZA LA PARTE DE PRODUCTOS*/
-
+.info-productos{
+    
+    text-align: center;
+	width:260px;
+	margin: 0px auto 20px;
+}
+.info-productos h1 {
+    text-align: center;
+    color: white;
+    background-color: rgb(72, 52, 101);
+    border:3px solid #FBBA60;
+    border-radius: 10px;
+    font-size: 30px;
+	padding: 10px 40px;
+	margin: auto;
+    margin-top: 60px;
+}
 
 
 /*AQUÍ COMIENZA LA PARTE DE OBSEQUIOS*/
@@ -601,6 +636,11 @@ header{
     background-attachment: fixed;
     position: relative;
 }
+@media (max-width: 400px){
+    .header{
+        width: 100%;
+    }
+}
 .container3{
     padding: 50px 0;
     width: 90%;
@@ -614,14 +654,44 @@ header{
     border-radius: 32px;
     border:10px solid rgb(72, 52, 101);
 }
-.titulos{
+.info-obsequios{
+    
     text-align: center;
-    color: #F5EAD8;
+	width:260px;
+	margin: 0px auto 20px;
+}
+.info-obsequios h1 {
+    text-align: center;
+    color: white;
     background-color: rgb(72, 52, 101);
     border:3px solid #FBBA60;
-    border-radius: 22px;
+    border-radius: 10px;
     font-size: 30px;
-    margin-bottom: 60px;
+	padding: 10px 40px;
+	margin: auto;
+    margin-top: 60px;
+}
+.info-obsequios1{
+    
+    text-align: center;
+	width:500px;
+	margin: 0px auto 20px;
+}
+.info-obsequios1 h1 {
+    text-align: center;
+    color: white;
+    background-color: rgb(72, 52, 101);
+    border:3px solid #FBBA60;
+    border-radius: 10px;
+    font-size: 30px;
+	padding: 10px 40px;
+	margin: auto;
+    margin-top: 60px;
+}
+@media(max-width:400px){
+    .info-obsequios1{
+        width: 100%;
+    }
 }
 .colores{
     background-color: rgb(72, 52, 101);
@@ -757,13 +827,14 @@ ul.slider li:target {
     outline: 0;
 }
 .contact-info{
-    background: rgb(0, 0, 0);
+    background: rgb(72, 52, 101);
 }
 .contact-info h4,
 .contact-info ul,
 .contact-info p {
     text-align: center;
     margin: 0 0 1rem 0;
+    color: white;
 }
 
 .contact-info ul li {
@@ -787,19 +858,20 @@ ul.slider li:target {
 }
 /*REDES SOCIALES DEL CONTACTO*/
 .info-contact{
-    
     text-align: center;
-	width:320px;
+	width:300px;
 	margin: 0px auto 20px;
-    margin-top: 20px;
 }
 .info-contact h1 {
-	font-size: 30px;
-	color: rgb(72, 52, 101);
-	background-color: rgba(255,255,255,0.70);
-	border-radius: 10px;
-	padding: 10px 60px;
+    text-align: center;
+    color: white;
+    background-color: rgb(72, 52, 101);
+    border:3px solid #FBBA60;
+    border-radius: 10px;
+    font-size: 30px;
+	padding: 10px 36px;
 	margin: auto;
+    margin-top: 60px;
 }
 .info-redes{
     
