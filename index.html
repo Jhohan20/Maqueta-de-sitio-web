@@ -11,10 +11,6 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/fontello.css">
     <link rel="icon" href="images/favicon.ico">
-    <script src="https://kit.fontawesome.com/f623f3d23e.js" crossorigin="anonymous"></script>
-    <!-- ACA VAN LOS ESTILOS DEL CHAT WHATSAPP -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/floating-wpp.js"></script>
     <link rel="stylesheet" href="css/floating-wpp.css">
     <title>Proyecto 52</title>
     <!--Estilos propios de este html-->
@@ -27,9 +23,9 @@
     </style> 
 </head>
   <body>
-    <!-- Icono del chat de whatsapp -->
-    <div id="contenedor_carga">
-      <div id="carga"></div>
+    <!-- LOADER -->
+    <div id="preloader">
+      <div id="loader"></div>
     </div>
 
     <div class="container-fluid">
@@ -80,6 +76,11 @@
     <script src="contenido.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/carga.js"></script>
+    <script src="js/loader.js"></script>
+    <script src="https://kit.fontawesome.com/f623f3d23e.js" crossorigin="anonymous"></script>
+    <!-- ACA VAN LOS ESTILOS DEL CHAT WHATSAPP -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/floating-wpp.js"></script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
@@ -97,7 +98,7 @@
             headerTitle: '¡Bienvenido!',
             headerColor: '#483465',
             backgroundColor: 'crimson',
-            buttonImage: '<img src="images/whatsApp.svg" />'
+            buttonImage: '<img src="images/whatsapp.svg" />'
         });
     });
 </script>
