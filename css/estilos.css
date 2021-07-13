@@ -34,16 +34,64 @@
     margin: -50px 0 0 -50px;
     background: url(../images/loader2.gif)no-repeat center 0;
 }
-header{
+.header1{
     width: 100%;
     height: 15em;
-    background: url(../images/logoheader.jpg);
+    background: url(../images/header1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.header2{
+    width: 100%;
+    height: 15em;
+    background: url(../images/header2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.header3{
+    width: 100%;
+    height: 15em;
+    background: url(../images/header3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.header4{
+    width: 100%;
+    height: 15em;
+    background: url(../images/header4.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.header5{
+    width: 100%;
+    height: 15em;
+    background: url(../images/header5.jpg);
     background-size: cover;
     background-attachment: fixed;
     position: relative;
 }
 @media (max-width: 400px){
-    .header{
+    .header1{
+        background-position: center;
+        height: 23em;
+    }
+    .header2{
+        background-position: center;
+        height: 23em;
+    }
+    .header3{
+        background-position: center;
+        height: 23em;
+    }
+    .header4{
+        background-position: center;
+        height: 23em;
+    }
+    .header5{
         background-position: center;
         height: 23em;
     }
@@ -203,8 +251,23 @@ header{
     color: white;
     padding: 10px 15px;
 }
+.info-equipo{
+    width: 50%;
+    margin-left: 310px;
+    margin-top: 30px;
+    text-align: justify;
+    background-color: rgb(72, 52, 101);
+    border: 3px solid #FBBA60;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 15px;
+}
 @media(max-width:400px){
     .info-no{
+        margin-left: 40px;
+        width: 80%;
+    }
+    .info-equipo{
         margin-left: 40px;
         width: 80%;
     }
@@ -653,8 +716,134 @@ ul.slider li:target{
 	margin: auto;
     margin-top: 60px;
 }
+.info-galeria{
+    width: 50%;
+    margin-left: 310px;
+    text-align: justify;
+    background-color: rgb(72, 52, 101);
+    border: 3px solid #FBBA60;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 15px;
+}
+@media(max-width:400px){
+    .info-galeria{
+        margin-left: 40px;
+        width: 80%;
+    }
+}
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 95%;
+    margin: auto;
+    grid-gap: 10px;
+    padding: 40px 0;
+    overflow: hidden;
+}
+.galeria img{
+    width: 100%;
+    vertical-align: top;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s;
+    border-radius: 10px;
+}
 
+.galeria a:hover img{
+    filter: blur(2px);
+    transform: rotate(10deg) scale(1.3)
+}
+.galeria > a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    border-radius: 10px;
+}
+.light-box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    transition: transform .3s ease-in-out;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+}
+.light-box img{
+    width: 50vw;
+    max-height: 70vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.textogaleria{
+    font-family: CaviarDreams;
+    background: black;
+    text-align: center;
+    color: #f29100;
+    position: absolute;
+    top: 85%;
+    width: 51%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+.textogaleria1{
+    font-family: CaviarDreams;
+    background: black;
+    text-align: center;
+    color: #f29100;
+    position: absolute;
+    top: 85%;
+    width: 51%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
 
+.light-box:target{
+    transform: scale(1);
+}
+.close1{
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background: #851919;
+    color:#fff;
+    text-align: none;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+.next{
+    display: block;
+    background-color: #483465;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    text-align: center;
+}
+
+@media screen and (max-width:400px){
+    .galeria{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .close{
+        top: 20px;
+        right: 20px;
+    }
+    .light-box img{
+        width: 85%;
+        max-height: 70vh;
+    }
+}
 /*AQUÍ COMIENZA LA PARTE DE OBSEQUIOS*/
 body {
     background: url(../images/park.png);
