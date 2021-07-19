@@ -96,7 +96,10 @@
         height: 23em;
     }
 }
-
+.iniciobody{
+    background-image: url(../images/fondoinicio.jpg);
+    background-size: 100%;
+}
 /*Aca comienzan mis estilos*/
 .icono-menu{
     margin: 20px 30px;
