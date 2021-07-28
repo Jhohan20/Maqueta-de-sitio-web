@@ -756,7 +756,7 @@ ul.slider li{
 }
 	
 ul.slider li img{
-	width: 100%;
+	width: 1000px;
 	height: 400px;
 	object-fit: cover;	
 } 
